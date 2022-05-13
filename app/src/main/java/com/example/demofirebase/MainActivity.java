@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "data added", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this,ReadDataActivity.class);
                 startActivity(intent);
+//                MainActivity.this.finish();
             }
 
             @Override

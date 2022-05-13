@@ -2,6 +2,7 @@ package com.example.demofirebase;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,6 +31,15 @@ public class ReadDataActivity extends AppCompatActivity {
 
 
         readData(data);
+
+        binding.btnupdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(ReadDataActivity.this,UpdateDataActivity.class);
+                startActivity(intent1);
+//                ReadDataActivity.this.finish();
+            }
+        });
 
     }
 
